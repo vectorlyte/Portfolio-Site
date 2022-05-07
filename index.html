@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <nav id="navbar">
+        <a href="#welcome-section" class="nav">about</a>
+        <a href="#projects" class="nav">projects</a>
+        <a href="#contact" class="nav">contact</a>
+      </nav>
+      <section id="welcome-section">
+        <div id="greeting">
+          <h1>Armand Iztueta</h1>
+          <h3 id="dev">_developer;</h3>
+        </div>
+        <div class="about">
+          <p>
+            Hello, and welcome to my portfolio page! Here, you can view actual
+            projects I have done using html, css, and Javascript.
+          </p>
+        </div>
+      </section>
+      <section id="projects">
+        <header>
+          <h3>Portfolio</h3>
+        </header>
+        <div id="project-tile" class="project-tile">
+          <a href="https://codepen.io/vectorlite/pen/OJzGEye" target="_blank">
+            <img
+              src="https://shots.codepen.io/vectorlite/pen/OJzGEye-512.jpg?version=1650734972"
+              alt="product landing page"
+              loading="lazy"
+            />
+          </a>
+
+          <a href="https://codepen.io/vectorlite/pen/gOoyoxj" target="_blank">
+            <img
+              src="https://shots.codepen.io/vectorlite/pen/gOoyoxj-512.jpg?version=1650665866"
+              class="ItemPreviewImage-module_root-TWHir"
+              alt="tribute page"
+              loading="lazy"
+            />
+          </a>
+
+          <a href="https://codepen.io/vectorlite/pen/LYevdyY" target="_blank">
+            <img
+              src="https://shots.codepen.io/vectorlite/pen/LYevdyY-512.jpg?version=1650679836"
+              class="ItemPreviewImage-module_root-TWHir"
+              alt="wallpaper survey"
+              loading="lazy"
+            />
+          </a>
+
+          <a href="https://codepen.io/vectorlite/pen/xxpNKQa" target="_blank">
+            <img
+              src="https://shots.codepen.io/vectorlite/pen/xxpNKQa-512.jpg?version=1650833976"
+              class="ItemPreviewImage-module_root-TWHir"
+              alt="documentation page"
+              loading="lazy"
+            />
+          </a>
+        </div>
+      </section>
+      <footer id="contact">
+        <header id="form-title">
+          <legend></legend>
+        </header>
+        <form action="./index.js" id="form" method="post">
+          <label for="name" class="labels">name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="enter your name"
+          />
+          <label for="email" class="labels">email*</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="enter your email"
+            required
+          />
+          <label for="message" class="labels">message</label>
+          <textarea name="message" id="message" cols="30" rows="6"></textarea>
+          <input type="submit" value="submit" id="submit" />
+        </form>
+      </footer>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

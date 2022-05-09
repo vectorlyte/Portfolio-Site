@@ -72,8 +72,9 @@
           <legend></legend>
         </header>
         <form action="index.js" id="form" method="post">
-          <label for="name" class="labels">name
-            <small id="name-small">hello</small>
+          <label for="name" class="labels"
+            >name
+            <small id="name-small"></small>
           </label>
           <input
             type="text"
@@ -81,8 +82,11 @@
             id="name"
             class="input"
             placeholder="enter your name"
-            />
-          <label for="email" class="labels">email*</label>
+          />
+          <label for="email" class="labels"
+            >email
+            <small id="email-small"></small>
+          </label>
           <input
             type="text"
             name="email"
@@ -90,9 +94,17 @@
             class="input"
             placeholder="enter your email"
           />
-          <label for="message" class="labels">message</label>
-          <textarea name="message" id="message" cols="30" rows="6"
-          class="input"></textarea>
+          <label for="message" class="labels"
+            >message
+            <small id="message-small"></small>
+          </label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="6"
+            class="input"
+          ></textarea>
           <input type="submit" value="submit" id="submit" />
         </form>
       </footer>

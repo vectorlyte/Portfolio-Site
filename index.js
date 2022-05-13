@@ -15,6 +15,7 @@ const messageLabel = document.getElementById("message-small");
 // function takes a form element + a status and displays error label + red glow around offending input box
 
 function showError(prop, condition){
+
     const element = document.getElementById(prop);
     element.className = "fail";
 
@@ -39,6 +40,7 @@ function showError(prop, condition){
 //  removes error modifications if invalid input is corrected, always called but isnt noticeable every time.
 
 function correctError(prop){
+    
     label = document.getElementById(prop + "-small");
     correct = form.elements[prop];
     correct.className = "input";
@@ -79,6 +81,6 @@ form.addEventListener('submit', (event) => {
     let message = checkValue("message", formMessage.value);
     
     if(name && email && message){
-        console.log("submitting");
+        // form.submit();
     }
 });

@@ -1,3 +1,3 @@
 # My Portfolio Site
 
-All coded by me. At this time it only uses vanilla js.
+All coded by me. At this time the site only uses vanilla js.

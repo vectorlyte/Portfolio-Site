@@ -1,3 +1,3 @@
-# My Portfolio Site
+# My Portfolio site
 
-All coded by me. At this time the site only uses vanilla js.
+Here you can view some of my projects

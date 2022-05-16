@@ -1,7 +1,7 @@
 const countEl = document.getElementById("counter");
 const animated = document.getElementById("redirect")
 
-function countDown(n = 5) {
+function countDown(n = 3) {
     if(n < 0){
         window.location.href = "index.html";
         return 0;

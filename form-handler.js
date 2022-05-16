@@ -81,6 +81,6 @@ form.addEventListener('submit', (event) => {
     let message = checkValue("message", formMessage.value);
     
     if(name && email && message){
-        // form.submit();
+        form.submit();
     }
 });

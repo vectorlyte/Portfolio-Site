@@ -6,24 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/bbc2b14fe3.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/bbc2b14fe3.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main>
       <nav id="navbar">
         <div id="icon-link-container">
-        <a href="https://github.com/vectorlyte" class="nav-icons" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/armand-iztueta-a64948239/" class="nav-icons" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a
+            href="https://github.com/vectorlyte"
+            class="nav-icons"
+            target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/armand-iztueta-a64948239/"
+            class="nav-icons"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
         </div>
         <div id="word-link-container">
-        <a href="#welcome-section" class="nav">about</a>
-        <a href="#projects" class="nav">projects</a>
-        <a href="#contact" class="nav">contact</a>
+          <a href="#welcome-section" class="nav">about</a>
+          <a href="#projects" class="nav">projects</a>
+          <a href="#contact" class="nav">contact</a>
         </div>
       </nav>
       <section id="welcome-section">
         <div id="profile-img-container">
-        <div id="profile-img"></div>
+          <div id="profile-img"></div>
         </div>
         <div id="greeting">
           <h1>Armand Iztueta</h1>
@@ -39,61 +52,68 @@
       </section>
       <section id="projects">
         <div id="project-section-container">
-        <header id="project-header">
-          <h3>Portfolio</h3>
-        </header>
-        <div id="project-tile" class="project-tile">
-          <div class="project-container">
-          <a href="https://codepen.io/vectorlite/pen/OJzGEye" target="_blank">
-            <img
-              src="./images/Screenshot (32).png"
-              alt="product landing page"
-              loading="lazy"
-              />
-              <h3 class="project-title">product landing page</h3>
-            </a>
+          <header id="project-header">
+            <h3>Portfolio</h3>
+          </header>
+          <div id="project-tile" class="project-tile">
+            <div class="project-container">
+              <a
+                href="https://codepen.io/vectorlite/pen/OJzGEye"
+                target="_blank"
+              >
+                <img
+                  src="./images/Screenshot (32).png"
+                  alt="product landing page"
+                  loading="lazy"
+                />
+                <h3 class="project-title">product landing page</h3>
+              </a>
             </div>
-          <div class="project-container">  
-          <a href="https://codepen.io/vectorlite/pen/gOoyoxj" target="_blank">
-            <img
-              src="./images/Screenshot (33).png"
-              class="ItemPreviewImage-module_root-TWHir"
-              alt="tribute page"
-              loading="lazy"
-            />
-            <h3 class="project-title">tribute page</h3>
-          </a>
+              <div id="game-container">
+              <div id="gameWindow" class="game-window">
+              <h3 id="score"></h3>
+              <div id="station" class="prop">
+              </div>
+              <div id="ground" class="prop"></div>
+              <h4 id="game-caption">click car to fuel</h4>
+              </div>
+            </div>
+            <div class="project-container">
+              <a
+                href="https://codepen.io/vectorlite/pen/LYevdyY"
+                target="_blank"
+              >
+                <img
+                  src="./images/Screenshot (34).png"
+                  class="ItemPreviewImage-module_root-TWHir"
+                  alt="wallpaper survey"
+                  loading="lazy"
+                />
+                <h3 class="project-title">survey form</h3>
+              </a>
+            </div>
+            <div class="project-container">
+              <a
+                href="https://codepen.io/vectorlite/pen/xxpNKQa"
+                target="_blank"
+              >
+                <img
+                  src="./images/Screenshot (31).png"
+                  class="ItemPreviewImage-module_root-TWHir"
+                  alt="documentation page"
+                  loading="lazy"
+                />
+                <h3 class="project-title">documentation page</h3>
+              </a>
+            </div>
           </div>
-          <div class="project-container">
-          <a href="https://codepen.io/vectorlite/pen/LYevdyY" target="_blank">
-            <img
-              src="./images/Screenshot (34).png"
-              class="ItemPreviewImage-module_root-TWHir"
-              alt="wallpaper survey"
-              loading="lazy"
-            />
-            <h3 class="project-title">survey form</h3>
-          </a>
-          </div>
-          <div class="project-container">
-          <a href="https://codepen.io/vectorlite/pen/xxpNKQa" target="_blank">
-            <img
-              src="./images/Screenshot (31).png"
-              class="ItemPreviewImage-module_root-TWHir"
-              alt="documentation page"
-              loading="lazy"
-            />
-            <h3 class="project-title">documentation page</h3>
-          </a>
-          </div>
-        </div>
         </div>
       </section>
       <footer id="contact">
         <header id="form-header">
           <legend>Need to get in touch? Send a message here</legend>
         </header>
-        <form  action="form-to-email.php" id="form" method="post">
+        <form action="form-to-email.php" id="form" method="post">
           <label for="name" class="labels"
             >name
             <small id="name-small"></small>
@@ -123,14 +143,25 @@
           <textarea
             name="message"
             id="message"
-            cols="30"
+            cols="25"
             rows="6"
             class="input"
           ></textarea>
           <button type="submit" id="submit-value">submit</button>
         </form>
+        <div id="link-container">
+          <h4>My links:</h4>
+          <a class="footer-links" href="https://github.com/vectorlyte"
+          target="_blank">Github
+          </a>
+          <a class="footer-links" href="https://www.linkedin.com/in/armand-iztueta-a64948239/"
+          target="_blank">Linkedin
+          </a>
+          <a class="footer-links" href="">Resume download</a>
+        </div>
       </footer>
     </main>
-    <script src="index.js"></script>
+    <script src="form-handler.js"></script>
+    <script src="game.js"></script>
   </body>
 </html>

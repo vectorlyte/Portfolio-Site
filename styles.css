@@ -4,6 +4,16 @@ html{
         scroll-behavior: smooth;
 }
 
+:root{
+    --animation-name: drive;
+        --fueled-ani: null;
+        --carBorder-color: black;
+        --animation-time: 1s;
+        --ani-count: infinite;
+        --rotateTo-mouse: 0deg;
+    --gameWindow-width: 100%;
+}
+
 * {
     margin: 0;
     font-family: sans-serif;
@@ -213,14 +223,18 @@ a {
     grid-gap: 20px;
 }
 
-.project-container{
+.project-container,
+#game-container{
     border: 4px solid var(--image-border);
     box-shadow: 0px 2px 35px 3px rgba(0, 0, 0, 0.75);
     position: relative;
     width: 90%;
     margin: auto;
     background-color: var(--image-border);
-    
+}
+
+#game-container{
+    height: 96%;
 }
 
 .project-container:hover {
@@ -247,10 +261,12 @@ footer {
     position: relative;
     min-width: 340px;
     height: 100vh;
+    min-height: 740px;
     background: linear-gradient(rgb(0, 0, 0), rgb(1, 40, 0));
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 2rem;
+    padding: 0 10px;
 }
 
 footer a {
@@ -271,13 +287,11 @@ footer a {
 }
 
 form{
-    width: 60%;
-    position: absolute;
-    right: 50%;
-    top: 180px;
-    max-width: 900px;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 10vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 100px 1fr;
     gap: 30px;
     color: white;
     font-size: 1rem;
@@ -318,7 +332,22 @@ small{
     border-radius: 30px;
     font-size: 1rem;
     font-family: sans-serif;
-    grid-area: 4/2/4/3;
+    grid-area: 5/1/5/3;
+}
+
+#link-container{
+    margin-top: 5vh;
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+.footer-links{
+    color: white;
+    margin-right: 10px;
+}
+
+.footer-links:hover{
+    color:rgb(50, 230, 100)
 }
 
 
@@ -395,17 +424,18 @@ small{
     }
 
     form {
-        text-align: right;
-        margin-left: 5px;
         gap:20px;
         grid-template-columns: 80px 1fr;
-        left: 0;
-        right: 0;
-        top:23%;
     }
     small{
         right: -220px;
+        top: 25px;
     }
+    
+    #message-small {
+        top: 130px;
+    }
+
     legend{
         font-size: 1rem;
 
@@ -417,3 +447,146 @@ small{
         max-width: 1200px;
     }
 }
+
+@media (max-width: 440px){
+    #game-container{
+        min-height: 200px;
+        max-width: 350px;
+    }
+}
+
+.game-window{
+    width: var(--gameWindow-width);
+    height: var(--gameWindow-width);
+    border: 2px solid black;
+    margin: auto;
+    position: relative;
+    background: linear-gradient(rgb(62, 145, 254), rgb(130, 211, 255));
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#score{
+    text-align: left;
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.prop{
+    position: absolute;
+}
+
+#car{
+    top: 74%;
+    animation-name: var(--animation-name);
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.body{
+    width:50px;
+    height: 10px;
+    z-index: 0;
+    border: 2px solid var(--carBorder-color);
+    animation-name: var(--fueled-ani);
+    animation-duration: var(--animation-time);
+    animation-iteration-count: var(--ani-count);
+}
+
+#car:hover{
+    --carBorder-color: white;
+    cursor: pointer;
+}
+.roof:hover{
+    --carBorder-color: white;
+    cursor: pointer;
+}
+
+.roof{
+    width: 30px;
+    height: 10px;
+    position: relative;
+    top: -24px;
+    left: 7px;
+    border: 2px solid var(--carBorder-color);
+    border-bottom: none;
+    z-index: 0;
+    animation-name: var(--fueled-ani);
+    animation-duration: var(--animation-time);
+    animation-iteration-count: var(--ani-count);
+}
+
+.front-wheels, .rear-wheels{
+    background-color: gray;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid var(--carBorder-color);
+    top: 5px;
+    position: absolute;
+    animation-name: var(--fueled-ani);
+    animation-duration: var(--animation-time);
+    animation-iteration-count: var(--ani-count);
+}
+
+.front-wheels{
+    left: 36px;
+}
+
+.rear-wheels{
+    left: 3px;
+}
+
+@keyframes fueled{
+    0% {border-color: black;}
+    50%{border-color:rgb(247, 254, 64)}
+    100% {border-color: black;}
+}
+
+@keyframes drive{
+    from {
+        left: -100px;
+    }
+    to{
+        left: 25%;
+    }
+}
+
+@keyframes driveAway {
+    from {
+        left: 25%;
+    }
+
+    to {
+        left: 120%;
+    }
+}
+
+
+#station{
+    background-color: blue;
+    width: 50px;
+    height: 70px;
+    top: 60%;
+    left: 30%;
+}
+
+#ground{
+    top: 80%;
+    border-top: 2px solid rgb(0, 135, 43);
+    background: linear-gradient(rgb(62, 254, 72), rgb(1, 99, 16));;
+    width: 100%;
+    height: 70px;
+}
+
+#game-caption{
+    position: absolute;
+    width: 100%;
+    font-size: 1.2rem;
+    top: 85%;
+    color: rgb(251, 255, 0);
+}
+
+
+

@@ -274,16 +274,12 @@ footer a {
     text-decoration: none;
 }
 
-#foot-head {
-    padding-top: 150px;
-    margin-bottom: 100px;
-}
-
 #form-header {
-    padding-top: 90px;
+    padding-top: 190px;
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
     font-weight: bold;
+    text-align: center;
 }
 
 form{
@@ -430,10 +426,6 @@ small{
     small{
         right: -220px;
         top: 25px;
-    }
-    
-    #message-small {
-        top: 130px;
     }
 
     legend{

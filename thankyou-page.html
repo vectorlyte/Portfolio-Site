@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Submit</title>
+    <title>Thank you</title>
     <style>
         *{
             margin: 0;
@@ -63,21 +63,3 @@
     <script src="redirect.js"></script>
 </body>
 </html>
-
-
-<?php
-
-$name = $_POST['name'];
-$visitor_email = $_POST['email'];
-$message = $_POST['message'];
-
-$email_from = "vectorlite@gmail.com";
-$email_subject = "Portfolio site message";
-$email_body = 'New message recieved from $name.\n'.
-
-$to = "vectorlite@gmail.com";
-$headers = 'From: $email_from \r\n';
-$headers .= 'Reply-To: $visitor_email \r\n';
-
-mail($to,$email_subject,$email_body,$headers);
-?>

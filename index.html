@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Armand's Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/bbc2b14fe3.js"
@@ -44,71 +44,141 @@
         </div>
         <div class="about">
           <p>
-            Hello! Welcome to my portfolio page. Here you can view actual
-            projects I have done using html, css, and Javascript.
+            Hello! Welcome to my portfolio page. Below you can view actual
+            projects I have done using HTML, CSS, and JavaScript. All code can be viewed on GitHub.
           </p>
         </div>
-        <a
-          href="./resume/Armand_Iztueta_resume_2022.pdf"
+        <!-- <a
+          href=""
           id="download-btn"
           download
           >download resume</a
-        >
+        > -->
       </section>
       <section id="projects">
         <div id="project-section-container">
           <header id="project-header">
-            <h3>Portfolio</h3>
+            <h3>Projects</h3>
           </header>
           <div id="project-tile" class="project-tile">
             <div class="project-container">
-              <a
-                href="https://codepen.io/vectorlite/pen/OJzGEye"
-                target="_blank"
-              >
-                <img
-                  src="./images/Screenshot (32).png"
-                  alt="product landing page"
-                  loading="lazy"
-                />
-                <h3 class="project-title">product landing page</h3>
-              </a>
-            </div>
-            <div id="game-container">
-              <div id="gameWindow" class="game-window">
-                <h3 id="score"></h3>
-                <div id="station" class="prop"></div>
-                <div id="ground" class="prop"></div>
-                <h4 id="game-caption">click car to fuel</h4>
+              <div id="game-window-container">
+                <div id="gameWindow" class="game-window">
+                  <h3 id="score"></h3>
+                  <div id="station" class="prop"></div>
+                  <div id="ground" class="prop"></div>
+                  <h4 id="game-caption">click car to fuel</h4>
+                </div>
+                <h3 class="project-title">Car Fueling Game</h3>
               </div>
+              <p class="project-desc">
+                Using CSS animations, a car pulls in to the "gas station", where
+                the player's job is to fuel it's tank by clicking it. After
+                fueling is complete, the car starts to flash indicating the
+                player to collect payment before it drives away.
+                <a
+                  class="proj-link"
+                  href="https://github.com/vectorlyte/gas-station-game"
+                  target="_blank"
+                  >View code here.
+                </a>
+              </p>
             </div>
             <div class="project-container">
-              <a
-                href="https://codepen.io/vectorlite/pen/LYevdyY"
-                target="_blank"
-              >
-                <img
-                  src="./images/Screenshot (34).png"
-                  class="ItemPreviewImage-module_root-TWHir"
-                  alt="wallpaper survey"
-                  loading="lazy"
-                />
-                <h3 class="project-title">survey form</h3>
-              </a>
+              <img
+                src="./images/Screenshot (37).png"
+                class="ItemPreviewImage-module_root-TWHir"
+                alt="Stock API app"
+                loading="lazy"
+              />
+              <h3 class="project-title">Stock Chart App</h3>
+              <p class="project-desc">
+                Users can search for stock companies and add their respective
+                price charts to the page. This is done using a stock info api
+                that the app fetches data from through the back end using
+                Node.js.
+                <a
+                  class="proj-link"
+                  href="https://github.com/vectorlyte/Stock_API_app"
+                  target="_blank"
+                  >View code here.
+                </a>
+              </p>
             </div>
             <div class="project-container">
-              <a
-                href="https://codepen.io/vectorlite/pen/xxpNKQa"
-                target="_blank"
-              >
-                <img
-                  src="./images/Screenshot (31).png"
-                  class="ItemPreviewImage-module_root-TWHir"
-                  alt="documentation page"
-                  loading="lazy"
-                />
-                <h3 class="project-title">documentation page</h3>
-              </a>
+              <img
+                src="./images/Screenshot (32).png"
+                alt="product landing page"
+                loading="lazy"
+              />
+              <h3 class="project-title">Product Landing Page</h3>
+              <p class="project-desc">
+                Built for an online course assignment to gain experience, this
+                landing page features a fake colored pencil company.
+                <br>
+                <a
+                  class="proj-link"
+                  href="https://codepen.io/vectorlite/full/OJzGEye"
+                  target="_blank"
+                  >View page here.
+                </a>
+              </p>
+            </div>
+            <div class="project-container">
+              <img
+                src="./images/Screenshot (42).png"
+                alt="memory game"
+                loading="lazy"
+              />
+              <h3 class="project-title">Memory Game</h3>
+              <p class="project-desc">
+                Inspired by one of those project ideas for jr devs Youtube videos, I challenged myself to keep Google searches while coding to a minimum to increase difficulty and creativity. What resulted was an interesting, over-engineered solution to a simple problem.
+                <a
+                  class="proj-link"
+                  href="https://reliable-dandy-denim.glitch.me/"
+                  target="_blank"
+                  >View page here.
+                </a>
+              </p>
+            </div>
+            <div class="project-container">
+              <img
+                src="./images/Screenshot (40).png"
+                alt="to-do list"
+                loading="lazy"
+              />
+              <h3 class="project-title">To-Do List App</h3>
+              <p class="project-desc">
+                This was created to get practice with javascript and is a handy tool for keeping track of small tasks. It is complete with local storage functionality and the abilty to delete items or mark them as done.
+                <br> 
+                <a
+                  class="proj-link"
+                  href="https://fork-battle-turret.glitch.me/"
+                  target="_blank"
+                  >View page here.
+                </a>
+              </p>
+            </div>
+            <div class="project-container">
+              <img
+                src="./images/Screenshot (31).png"
+                class="ItemPreviewImage-module_root-TWHir"
+                alt="documentation page"
+                loading="lazy"
+              />
+              <h3 class="project-title">Documentation Page</h3>
+              <p class="project-desc">
+                For this I tested my knowledge on the basics of java and
+                programming in general. Having not created a sidebar menu
+                before, this was an interesting challenge in both the
+                construction of the page and accuracy of the content.
+                <a
+                  class="proj-link"
+                  href="https://codepen.io/vectorlite/full/xxpNKQa"
+                  target="_blank"
+                  >View page here.
+                </a>
+              </p>
             </div>
           </div>
         </div>
@@ -176,12 +246,12 @@
             target="_blank"
             >Linkedin
           </a>
-          <a
+          <!-- <a
             class="footer-links"
-            href="./resume/Armand_Iztueta_resume_2022.pdf"
+            href=""
             download
             >download resume</a
-          >
+          > -->
         </div>
       </footer>
     </main>

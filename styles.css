@@ -1,5 +1,5 @@
 html{
-    --image-border: rgba(209, 243, 255, 0.868);
+    --image-border: rgb(222, 248, 255);
     scroll-behavior: smooth;
     --projectTitle-color:rgb(87, 87, 87);
 }
@@ -21,18 +21,28 @@ html{
 }
 
 section{
-    min-width: 340px;
+    min-width: 360px;
     min-height: 100vh;
-}
-
-button:hover {
-    cursor: pointer;
 }
 
 a {
     text-decoration: none;
+    color: rgb(214, 214, 214);
 }
 
+h1{
+    font-weight: 100;
+}
+
+h4{
+    font-weight: 100;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+p{
+    font-size: .8rem;
+}
 
 #navbar {
     position: fixed;
@@ -59,173 +69,66 @@ a {
 }
 
 .nav-icons {
-    color: white;
     text-align: left;
     margin-left: 10px;
 }
 
 .nav {
-    color: white;
     text-decoration: none;
     margin: 0px 20px 0 0;
     font-size: 1.2rem;
 }
 
 #navbar a:hover {
-    color: rgb(50, 230, 100);
+    color: white;
     transition-duration: .3s;
 }
 
 #welcome-section {
-    min-width: 360px;
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 146, 63, 0.6), rgba(0, 0, 0, 0)),
-    url(./images/pexels-pixabay-50711.jpg);
+    background: linear-gradient(rgba(110, 204, 255, 0.436), rgba(0, 0, 0, 0));
     background-size: cover;
     color: white;
 }
 
-#profile-img-container {
-    margin-top: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 100px;
-}
-
-
-#profile-img {
-    border: 2px solid white;
-    background-image: url(./images/catmask.png);
-    background-size: contain;
-    border-radius: 50%;
-    animation-name: displayProfile;
-    animation-duration: 1s;
-    animation-delay: 4000ms;
-    animation-fill-mode: forwards;
-}
-
-@keyframes displayProfile {
-    from {
-        width: 0px;
-        height: 0px;
-    }
-
-    to {
-        width: 100px;
-        height: 100px;
-    }
-}
-
 #greeting{
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 10vh;
-    animation-name: greet;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-delay: 2000ms;
-}
-
-#greeting h1{
-        font-weight: 100;
-}
-
-@keyframes greet{
-    from{
-        margin-top: 10vh;
-    }
-    to{
-        margin-top: 0;
-        font-size: 1.5rem;
-    }
-}
-
-#dev {
-            margin-top: 10px;
-            font-family: courier;
-            color: rgb(50, 230, 100);
-            background: black;
-            padding: 10px 20px;
-            border-radius: 10px;
-            display: inline-block;
-}
-
-.about{
-    background-color: transparent;
-    color: transparent;
-    margin-top: 20px;
-    width: 80%;
-    max-width: 500px;
+    width: 30%;
+    min-width: 300px;
+    max-width: 452px;
     padding: 10px;
-    border-radius: 10px;
-    animation-name: reveal;
-    animation-duration: 1s;
-    animation-delay: 4000ms;
-    animation-fill-mode: forwards;
+    font-weight: 100;
+    color: rgb(39, 39, 51);
 }
 
-@keyframes reveal{
-    to{
-        background: rgba(0, 0, 0, .5);
-        color: white;
-    }
+#my-name{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 4px 7px rgba(21, 54, 56, 0.69);
+    font-size: 3rem;
+    letter-spacing: 3px;
 }
-
-#download-btn{
-    margin-top: 2vh;
-    background-color: transparent;
-        color: transparent;
-        border-color: transparent;
-    border-width: 3px;
-    border-radius: 30px;
-    font-size: 1rem;
-    font-family: sans-serif;
-    padding: 10px 20px;
-    animation-name: showBtn;
-        animation-duration: 1s;
-        animation-delay: 5000ms;
-        animation-fill-mode: forwards;
-        
-}
-
-
-@keyframes showBtn{
-    from{background-color: transparent;
-        color: transparent;
-        border-color: transparent;}
-        to{background-color: black;
-            color: rgb(50, 230, 100);
-            border-color: gray;
-            
-        }
-    }
 
 #projects {
-    min-width: 360px;
     padding-top: 50px;
     padding-bottom: 40px;
     text-align: center;
     font-size: 2rem;
-    background-image: linear-gradient(rgba(7, 75, 90, 0.7), rgba(31, 21, 89, 0.6)), url(./images/pexels-messala-ciulla-1114226.jpg);
+    background: linear-gradient(rgba(142, 137, 132, 0.534), rgba(255, 255, 255, 0.6));
     background-size: cover;
 }
 #project-header h3{
-    color: rgb(240, 251, 255);
+
+    color: rgb(255, 255, 255);
+text-shadow: 2px 4px 7px rgba(46, 40, 19, 0.69);
+    letter-spacing: 3px;
     font-weight: 100;
-    /* background-color: rgb(233, 106, 2);
-    display: inline-block;
-    padding: 5px;
-    border-radius: 10px; */
 }
 
 
 #project-tile {
-    /* border: 4px solid red; */
     margin: auto;
     margin-top: 40px;
     margin-bottom: 10px;
@@ -235,24 +138,13 @@ a {
 }
 
 .project-container{
-    border-radius: 10px;
-    box-shadow: 0px 2px 35px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 14px 25px -7px rgba(0, 0, 0, 0.62);
     margin-bottom: 40px;
     min-height: 300px;
     width: 30%;
     min-width: 300px;
     background-color: var(--image-border);
-    padding: 4px;
 }
-
-/* #game-container{
-    height: 96%;
-} */
-
-/* .project-container:hover {
-    --image-border: rgb(160, 160, 160);
-    --projectTitle-color: white;
-} */
 
 .project-title{
     font-size: 1.2rem;
@@ -262,10 +154,13 @@ a {
 }
 
 .project-desc{
-    font-size: .8rem;
     margin-bottom: 5px;
-    /* margin-left: 20px;
-    margin-right: 20px; */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.proj-link{
+    color: rgb(44, 131, 237);
 }
 
 .proj-link:hover{
@@ -273,9 +168,8 @@ a {
 }
 
 img {
-    width: 99%;
-    border: 2px solid black;
-    border-radius: 5px;
+    width: 100%;
+
 }
 
 footer {
@@ -342,11 +236,8 @@ small{
 
 #submit-value{
     padding: 20px;
-    background-color: transparent;
-    color:rgb(50, 230, 100);
-    border-color: rgb(50, 230, 100);
-    border-width: 3px;
-    border-radius: 30px;
+    color: white;
+    background-color: rgba(50, 230, 101, 0.674);
     font-size: 1rem;
     font-family: sans-serif;
     grid-area: 5/1/5/3;
@@ -363,20 +254,8 @@ small{
     margin-right: 10px;
 }
 
-.footer-links:hover{
-    color:rgb(50, 230, 100)
-}
-
 
 @media (max-width: 960px) {
-    /* #project-tile {
-        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-        max-width: 600px;
-    } */
-
-    h3{
-        font-size: 1.5rem;
-    }
 
     img{
         max-width: 350px;
@@ -396,23 +275,7 @@ small{
         width: 50px;
         height: 50px;
     }
-    #greeting{
-        animation-name: none;
-        font-size: 1rem;
-        margin-top: 0;
-    }
 
-    .about{
-        font-size: .8rem;
-        animation-name: none;
-        margin-top: 20px;
-            width: 80%;
-            max-width: 500px;
-            padding: 10px;
-            border-radius: 10px;
-            color: white;
-            background-color: rgba(0, 0, 0,.5);
-    }
 
     #download-btn{
         animation-name: none;
@@ -468,10 +331,8 @@ small{
 
 .game-window{
     padding-top: 55.5%;
-    border: 2px solid black;
     width: 100%;
     height: 100%;
-    border-radius: 5px;
     margin-bottom: 10px;
     position: relative;
     background: linear-gradient(rgb(62, 145, 254), rgb(130, 211, 255));

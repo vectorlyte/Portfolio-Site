@@ -1,5 +1,5 @@
 html{
-    --image-border: rgb(222, 248, 255);
+    --image-border: rgba(189, 189, 189, 0.562);
     scroll-behavior: smooth;
     --projectTitle-color:rgb(87, 87, 87);
 }
@@ -22,7 +22,6 @@ html{
 
 section{
     min-width: 360px;
-    min-height: 100vh;
 }
 
 a {
@@ -90,8 +89,8 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(110, 204, 255, 0.436), rgba(0, 0, 0, 0));
-    background-size: cover;
+    background: rgb(241, 255, 0);
+        background: linear-gradient(124deg, rgba(241, 255, 0, 1) 0%, rgba(205, 42, 42, 1) 41%, rgba(32, 152, 161, 1) 100%);
     color: white;
 }
 
@@ -101,7 +100,7 @@ p{
     max-width: 452px;
     padding: 10px;
     font-weight: 100;
-    color: rgb(39, 39, 51);
+    color: white;
 }
 
 #my-name{
@@ -112,16 +111,17 @@ p{
 }
 
 #projects {
-    padding-top: 50px;
+    min-height: 82vh;
+    padding-top: 100px;
     padding-bottom: 40px;
     text-align: center;
     font-size: 2rem;
-    background: linear-gradient(rgba(142, 137, 132, 0.534), rgba(255, 255, 255, 0.6));
+    background: linear-gradient(rgb(34, 36, 39), rgb(90, 92, 100));
     background-size: cover;
 }
 #project-header h3{
 
-    color: rgb(255, 255, 255);
+    color: rgb(144, 144, 144);
 text-shadow: 2px 4px 7px rgba(46, 40, 19, 0.69);
     letter-spacing: 3px;
     font-weight: 100;
@@ -130,18 +130,18 @@ text-shadow: 2px 4px 7px rgba(46, 40, 19, 0.69);
 
 #project-tile {
     margin: auto;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
 }
 
 .project-container{
     box-shadow: 12px 14px 25px -7px rgba(0, 0, 0, 0.62);
-    margin-bottom: 40px;
     min-height: 300px;
-    width: 30%;
+    width: 40%;
     min-width: 300px;
     background-color: var(--image-border);
 }
@@ -160,7 +160,7 @@ text-shadow: 2px 4px 7px rgba(46, 40, 19, 0.69);
 }
 
 .proj-link{
-    color: rgb(44, 131, 237);
+    color: rgb(0, 72, 161);
 }
 
 .proj-link:hover{
@@ -177,7 +177,7 @@ footer {
     min-width: 340px;
     min-height: 740px;
     height: 100vh;
-    background: linear-gradient(rgb(24, 20, 43), rgb(44, 0, 89));
+    background: linear-gradient(rgb(45, 44, 49), rgb(73, 73, 73));
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 2rem;
@@ -323,149 +323,6 @@ small{
     }
 }
 
-#game-window-container{
-    width: 100%;
-
-    /* border: 2px solid black; */
-}
-
-.game-window{
-    padding-top: 55.5%;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-    position: relative;
-    background: linear-gradient(rgb(62, 145, 254), rgb(130, 211, 255));
-    overflow: hidden;
-    box-sizing: border-box;
-}
-
-#score{
-    position: absolute;
-    text-align: left;
-    color: rgb(0, 55, 205);
-    font-size: 1.2rem;
-    width: 100%;
-    font-weight: 100;
-    top: 5%;
-    left: 2%;
-}
-
-.prop{
-    position: absolute;
-}
-
-#car{
-    top: 74%;
-    animation-name: var(--animation-name);
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-
-.body{
-    width:50px;
-    height: 10px;
-    z-index: 0;
-    border: 2px solid var(--carBorder-color);
-    animation-name: var(--fueled-ani);
-    animation-duration: var(--animation-time);
-    animation-iteration-count: var(--ani-count);
-}
-
-#car:hover{
-    --carBorder-color: white;
-    cursor: pointer;
-}
-.roof:hover{
-    --carBorder-color: white;
-    cursor: pointer;
-}
-
-.roof{
-    width: 30px;
-    height: 10px;
-    position: relative;
-    top: -24px;
-    left: 7px;
-    border: 2px solid var(--carBorder-color);
-    border-bottom: none;
-    z-index: 0;
-    animation-name: var(--fueled-ani);
-    animation-duration: var(--animation-time);
-    animation-iteration-count: var(--ani-count);
-}
-
-.front-wheels, .rear-wheels{
-    background-color: gray;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    border: 2px solid var(--carBorder-color);
-    top: 5px;
-    position: absolute;
-    animation-name: var(--fueled-ani);
-    animation-duration: var(--animation-time);
-    animation-iteration-count: var(--ani-count);
-}
-
-.front-wheels{
-    left: 36px;
-}
-
-.rear-wheels{
-    left: 3px;
-}
-
-@keyframes fueled{
-    0% {border-color: black;}
-    50%{border-color:rgb(247, 254, 64)}
-    100% {border-color: black;}
-}
-
-@keyframes drive{
-    from {
-        left: -100px;
-    }
-    to{
-        left: 25%;
-    }
-}
-
-@keyframes driveAway {
-    from {
-        left: 25%;
-    }
-
-    to {
-        left: 120%;
-    }
-}
-
-
-#station{
-    background-color: blue;
-    width: 50px;
-    height: 70px;
-    top: 60%;
-    left: 30%;
-}
-
-#ground{
-    top: 80%;
-    border-top: 2px solid rgb(0, 135, 43);
-    background: linear-gradient(rgb(62, 254, 72), rgb(1, 99, 16));;
-    width: 100%;
-    height: 70px;
-}
-
-#game-caption{
-    position: absolute;
-    width: 100%;
-    font-weight: 200;
-    font-size: 1.2rem;
-    top: 45%;
-    color: rgb(6, 85, 232);
-}
 
 
 

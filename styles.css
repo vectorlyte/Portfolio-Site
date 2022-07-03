@@ -100,11 +100,9 @@ p{
     max-width: 452px;
     padding: 10px;
     font-weight: 100;
-    color: white;
 }
 
 #my-name{
-    color: rgb(255, 255, 255);
     text-shadow: 2px 4px 7px rgba(21, 54, 56, 0.69);
     font-size: 3rem;
     letter-spacing: 3px;
@@ -134,8 +132,6 @@ text-shadow: 2px 4px 7px rgba(46, 40, 19, 0.69);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
-    gap: 40px;
 }
 
 .project-container{
@@ -144,6 +140,7 @@ text-shadow: 2px 4px 7px rgba(46, 40, 19, 0.69);
     width: 40%;
     min-width: 300px;
     background-color: var(--image-border);
+    margin-bottom: 40px;
 }
 
 .project-title{

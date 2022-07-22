@@ -156,12 +156,26 @@ text-shadow: 2px 4px 7px rgba(46, 40, 19, 0.69);
     margin-right: 20px;
 }
 
-.proj-link{
-    color: rgb(0, 72, 161);
+.proj-link-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: .7rem;
+    margin-bottom: 5px;
 }
 
-.proj-link:hover{
-    color:blue
+.proj-link-page, .proj-link-code{
+    background-color: rgb(86, 92, 93);
+    color: rgb(216, 216, 216);
+    padding: 5px;
+}
+
+.proj-link-page:hover{
+    color:rgb(255, 234, 0)
+}
+
+.proj-link-code:hover {
+    color: rgb(153, 255, 0)
 }
 
 img {
